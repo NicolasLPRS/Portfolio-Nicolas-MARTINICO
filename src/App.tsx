@@ -80,7 +80,9 @@ function App() {
                 className="w-full md:w-1/3 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />
               <p className="text-gray-300 leading-relaxed">
-                Dans un domaine en constante évolution, il est essentiel de maintenir une veille technologique active. J'utilise des outils comme <strong>Feedly</strong>, <strong>Twitter</strong>, et des forums spécialisés pour rester informé. Mon sujet de veille technologique actuel porte sur l'Automobile et l'IA car il me permet d'explorer une transformation technologique majeure qui impacte la sécurité, l'innovation et l'efficacité des véhicules, tout en influençant l'avenir de l'industrie et des transports.
+                Dans un domaine en constante évolution, il est essentiel de maintenir une veille technologique active. J'utilise des outils comme <strong>Feedly</strong>, <strong>Twitter</strong>, et des forums spécialisés pour rester informé. Mon sujet de veille technologique actuel porte sur Azure Active Directory (Azure AD, désormais appelé Entra ID) est le service cloud de gestion des identités et des accès de Microsoft. Il fournit une authentification unique et authentification multifactorielle pour aider les organisations à accéder en toute sécurité aux applications cloud et aux applications sur site.
+
+Entra ID permet aux organisations de gérer les utilisateurs et les groupes. Il peut s'intégrer sur site Active Directory pour fournir une solution d’identité hybride.
               </p>
             </div>
           </div>
