@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Nicolas MARTINICO</title>
+  <script>
+        function checkPassword() {
+            var password = prompt("Entrez le mot de passe :");
+            if (password !== "f%*=&#?y8V") {
+                alert("Mot de passe incorrect !");
+               document.body.innerHTML = "<h1>Erreur 404 - Mot de passe incorrect !</h1><p>Veuillez contacter n.martinico-lopez@lprs.fr.</p>";
+                document.title = "Erreur 404";
+            }
+        }
+    </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
   <style>
@@ -26,6 +36,8 @@
   </style>
 </head>
 <body>
+<onload="checkPassword()"> ------
+    <h1>Bienvenue sur mon site</h1> ------------------------------------
   <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
     <!-- Hero Section -->
     <header class="min-h-screen flex items-center justify-center relative">
