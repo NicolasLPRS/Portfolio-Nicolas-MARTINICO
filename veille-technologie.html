@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique - Nicolas Martinico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4">
+      <ul class="flex justify-center space-x-8 py-4">
+        <li><a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Accueil</a></li>
+        <li><a href="index.html#formation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">BTS SIO</a></li>
+        <li><a href="#" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Veille Technologique</a></li>
+        <li><a href="index.html#cv" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+        alt="Background"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-6">Veille Technologique</h1>
+        <h2 class="text-3xl text-blue-400 mb-4">Microsoft Entra ID (anciennement Azure AD)</h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Une exploration approfondie de la solution de gestion des identités et des accès de Microsoft
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Introduction -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-info w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Qu'est-ce que Microsoft Entra ID ?</h2>
+      </div>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Microsoft Entra ID (anciennement Azure Active Directory) est la solution de gestion des identités et des accès basée sur le cloud de Microsoft. C'est le cœur de la stratégie de sécurité moderne de Microsoft, offrant une authentification unique (SSO) et une gestion centralisée des identités pour les applications cloud et sur site.
+      </p>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img 
+          src="https://www.eliadis.com/wp-content/uploads/2024/06/Microsoft-Entra-ID.webp"
+          alt="Microsoft Entra ID"
+          class="w-full md:w-1/2 rounded-lg shadow-lg hover-scale"
+        />
+        <div class="text-gray-300">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Points clés :</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Gestion centralisée des identités</li>
+            <li>Authentification unique (SSO)</li>
+            <li>Protection avancée des identités</li>
+            <li>Intégration avec les services cloud</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fonctionnalités principales -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-key w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Fonctionnalités principales</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Authentification multifacteur (MFA)</h3>
+          <p class="text-gray-300">
+            Protection renforcée des comptes utilisateurs avec plusieurs facteurs d'authentification, réduisant significativement les risques de compromission.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Accès conditionnel</h3>
+          <p class="text-gray-300">
+            Politiques d'accès granulaires basées sur l'utilisateur, l'appareil, la localisation et le niveau de risque.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Gestion des appareils</h3>
+          <p class="text-gray-300">
+            Intégration avec Microsoft Intune pour une gestion complète des appareils et des politiques de conformité.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Rapports et surveillance</h3>
+          <p class="text-gray-300">
+            Analyses détaillées des activités de connexion, des risques de sécurité et de l'utilisation des applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avantages pour les entreprises -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-trending-up w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Avantages pour les entreprises</h2>
+      </div>
+      <div class="space-y-6 text-gray-300">
+        <div class="flex items-start space-x-4">
+          <i class="lucide-shield-check w-6 h-6 text-blue-400 mt-1"></i>
+          <div>
+            <h3 class="text-xl font-bold text-blue-400">Sécurité renforcée</h3>
+            <p>Protection avancée contre les cybermenaces avec des contrôles d'accès sophistiqués et une surveillance continue.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <i class="lucide-wallet w-6 h-6 text-blue-400 mt-1"></i>
+          <div>
+            <h3 class="text-xl font-bold text-blue-400">Réduction des coûts</h3>
+            <p>Diminution des coûts de gestion des identités et des accès grâce à la centralisation et l'automatisation.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <i class="lucide-users w-6 h-6 text-blue-400 mt-1"></i>
+          <div>
+            <h3 class="text-xl font-bold text-blue-400">Productivité améliorée</h3>
+            <p>Simplification de l'accès aux ressources pour les utilisateurs avec l'authentification unique.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cas d'usage -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-layout-grid w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Cas d'usage</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Entreprises hybrides</h3>
+          <p class="text-gray-300">
+            Gestion unifiée des identités pour les environnements cloud et sur site.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Travail à distance</h3>
+          <p class="text-gray-300">
+            Accès sécurisé aux ressources de l'entreprise depuis n'importe où.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Collaboration externe</h3>
+          <p class="text-gray-300">
+            Gestion des accès pour les partenaires et collaborateurs externes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sources et références -->
+    <section class="bg-gray-800 rounded-lg p-8 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-book-open w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Sources et références</h2>
+      </div>
+      <ul class="space-y-4 text-gray-300">
+        <li>
+          <a href="https://www.microsoft.com/fr-fr/security/business/microsoft-entra" class="text-blue-400 hover:text-blue-300 transition-colors">
+            Documentation officielle Microsoft Entra
+          </a>
+        </li>
+        <li>
+          <a href="https://learn.microsoft.com/fr-fr/entra/fundamentals/whatis" class="text-blue-400 hover:text-blue-300 transition-colors">
+            Microsoft Learn - Fondamentaux d'Entra ID
+          </a>
+        </li>
+        <li>
+          <a href="https://www.microsoft.com/fr-fr/security/business/microsoft-entra/azure-active-directory-pricing" class="text-blue-400 hover:text-blue-300 transition-colors">
+            Tarification et fonctionnalités
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 mt-12">
+    <div class="container mx-auto px-4 text-center text-gray-400">
+      <p>© 2024 Nicolas Martinico. Tous droits réservés.</p>
+      <p class="mt-2">
+        <a href="mailto:N.Martinico@outlook.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+          N.Martinico@outlook.com
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
