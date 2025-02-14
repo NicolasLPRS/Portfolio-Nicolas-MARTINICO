@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bac Pro SN RISC - Nicolas Martinico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto px-4">
+        <ul class="flex justify-center space-x-8 py-4">
+          <li><a href="#presentation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Accueil</a></li>
+          <li><a href="#formation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">BTS SIO</a></li>
+          <li><a href="veille-technologie.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Veille Technologique</a></li>
+           <li><a href="#Compétences" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Compétences</a></li>
+          <li><a href="#cv" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">CV</a></li>
+        </ul>
+      </div>
+    </nav>
+  <!-- Header -->
+  <header class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80"
+        alt="Background"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-6">Bac Pro Systèmes Numériques</h1>
+        <p class="text-xl text-blue-400 mb-4">Option RISC - Réseaux Informatiques et Systèmes Communicants</p>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Lycée Robert Schuman, Dugny (2020-2023)
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Présentation de la formation -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-graduation-cap w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">La formation</h2>
+      </div>
+      <div class="text-gray-300 space-y-4">
+        <p>
+          Le Bac Professionnel Systèmes Numériques option RISC (Réseaux Informatiques et Systèmes Communicants) est une formation qui prépare aux métiers de l'informatique et des réseaux. Cette formation m'a permis d'acquérir les bases essentielles dans le domaine des réseaux et de l'informatique.
+        </p>
+        <p>
+          Durant ces trois années, j'ai alterné entre formation théorique et stages en entreprise, me permettant de mettre en pratique mes connaissances dans un environnement professionnel.
+        </p>
+      </div>
+    </section>
+
+    <!-- Compétences acquises -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-check-circle w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Compétences acquises</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Installation et configuration</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Installation de systèmes d'exploitation</li>
+            <li>Configuration de postes clients</li>
+            <li>Mise en place de réseaux locaux</li>
+            <li>Installation de logiciels</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Maintenance</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Diagnostic de pannes</li>
+            <li>Maintenance préventive</li>
+            <li>Réparation de matériel</li>
+            <li>Support utilisateur</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Réseaux de base</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Câblage réseau</li>
+            <li>Configuration de base des switches</li>
+            <li>Adressage IP</li>
+            <li>Tests de connectivité</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Communication</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Relation client</li>
+            <li>Documentation technique</li>
+            <li>Travail en équipe</li>
+            <li>Reporting d'interventions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stages et projets -->
+    <section class="bg-gray-800 rounded-lg p-8 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-briefcase w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Stages et projets</h2>
+      </div>
+      <div class="space-y-8">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Stage chez VOIP-TELECOM</h3>
+          <p class="text-gray-300">
+            Stage de 8 semaines en tant que technicien support, incluant la gestion des tickets, le support client et la maintenance du parc informatique.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Stage chez Green Cube</h3>
+          <p class="text-gray-300">
+            Stage de 6 semaines axé sur le câblage réseau et la mise en place d'infrastructures physiques, incluant l'installation de prises réseau et la certification des câbles.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Projet de fin d'études</h3>
+          <p class="text-gray-300">
+            Mise en place d'un réseau local pour une petite entreprise, incluant la configuration des postes clients et la mise en place d'un serveur de fichiers.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8">
+    <div class="container mx-auto px-4 text-center text-gray-400">
+      <p>© 2024 Nicolas Martinico. Tous droits réservés.</p>
+      <p class="mt-2">
+        <a href="mailto:N.Martinico@outlook.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+          N.Martinico@outlook.com
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
