@@ -78,6 +78,33 @@
   </script>
 </head>
 </body>
+<body>
+  <!-- Login Form -->
+  <div id="loginForm" class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-md">
+      <h2 class="text-2xl font-bold text-white mb-6 text-center">Accès au Portfolio</h2>
+      <div class="space-y-4">
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-300 mb-2">Mot de passe</label>
+          <input
+            type="password"
+            id="password"
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Entrez le mot de passe"
+          />
+        </div>
+        <button
+          onclick="checkPassword()"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+        >
+          Accéder au site
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="content" class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
   <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
     <!-- Hero Section -->
     <header class="min-h-screen flex items-center justify-center relative">
