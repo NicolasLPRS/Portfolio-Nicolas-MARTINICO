@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS SIO SISR - Nicolas Martinico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+ .dropdown-menu {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0.5rem;
+      min-width: 12rem;
+      padding-top: 0.5rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -0.5rem;
+      left: 0;
+      right: 0;
+      height: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4">
+      <ul class="flex justify-center space-x-8 py-4">
+        <li><a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Accueil</a></li>
+        <li class="dropdown relative">
+          <a href="index.html#formation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">
+            Formations
+          </a>
+          <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-gray-900 rounded-lg shadow-xl">
+            <li>
+              <a href="bts-sio.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-t-lg">
+                BTS SIO SISR
+              </a>
+            </li>
+            <li>
+              <a href="bac-pro.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                BAC PRO SN
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="veille-technologie.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Veille Technologique</a></li>
+        <li><a href="index.html#Compétences" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Compétences</a></li>
+        <li><a href="index.html#cv" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80"
+        alt="Background"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-6">BTS SIO SISR</h1>
+        <p class="text-xl text-blue-400 mb-4">Services Informatiques aux Organisations</p>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Option Solutions d'Infrastructure, Systèmes et Réseaux
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Présentation de la formation -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-graduation-cap w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">La formation</h2>
+      </div>
+      <div class="text-gray-300 space-y-4">
+        <p>
+          Le BTS SIO (Services Informatiques aux Organisations) est une formation de niveau Bac+2 qui prépare aux métiers de l'informatique. L'option SISR (Solutions d'Infrastructure, Systèmes et Réseaux) forme des professionnels capables de gérer et d'administrer le réseau d'une organisation.
+        </p>
+        <p>
+          Cette formation est réalisée en alternance chez STELOGY, me permettant d'acquérir une expérience professionnelle concrète tout en poursuivant mes études.
+        </p>
+      </div>
+    </section>
+
+    <!-- Compétences acquises -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-check-circle w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Compétences acquises</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Administration système</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Configuration de serveurs Windows Server</li>
+            <li>Gestion d'Active Directory</li>
+            <li>Administration de systèmes Linux</li>
+            <li>Virtualisation (VMware, Hyper-V)</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Réseaux</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Configuration de switches et routeurs</li>
+            <li>Mise en place de VLANs</li>
+            <li>Sécurisation des réseaux</li>
+            <li>Protocoles de routage</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Sécurité</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Mise en place de pare-feu</li>
+            <li>Configuration de VPN</li>
+            <li>Gestion des droits d'accès</li>
+            <li>Sécurisation des données</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Cloud Computing</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Microsoft Azure</li>
+            <li>Services cloud Microsoft 365</li>
+            <li>Solutions de sauvegarde cloud</li>
+            <li>Gestion des identités cloud</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets réalisés -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-folder w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Projets réalisés</h2>
+      </div>
+      <div class="space-y-8">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Migration infrastructure</h3>
+          <p class="text-gray-300">
+            Migration d'une infrastructure physique vers une solution virtualisée, incluant la mise en place de serveurs virtuels et la configuration du réseau.
+          </p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Déploiement Microsoft 365</h3>
+          <p class="text-gray-300">
+            Configuration et déploiement de Microsoft 365 pour une entreprise, incluant la migration des emails et la mise en place des politiques de sécurité.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8">
+    <div class="container mx-auto px-4 text-center text-gray-400">
+      <p>© 2024 Nicolas Martinico. Tous droits réservés.</p>
+      <p class="mt-2">
+        <a href="mailto:N.Martinico@outlook.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+          N.Martinico@outlook.com
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
