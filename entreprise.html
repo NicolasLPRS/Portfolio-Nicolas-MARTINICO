@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Alternance chez STELOGY - Nicolas Martinico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0.5rem;
+      min-width: 12rem;
+      padding-top: 0.5rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -0.5rem;
+      left: 0;
+      right: 0;
+      height: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
+  <!-- Navigation -->
+   <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4">
+      <ul class="flex justify-center space-x-8 py-4">
+        <li><a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Accueil</a></li>
+        <li class="dropdown relative">
+          <a href="index.html#formation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">
+            Formations
+          </a>
+          <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-gray-900 rounded-lg shadow-xl">
+            <li>
+              <a href="bts-sio.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-t-lg">
+                BTS SIO SISR
+              </a>
+            </li>
+            <li>
+              <a href="bac-pro.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                BAC PRO SN
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="entreprise.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Entreprise</a></li>
+        <li><a href="veille-technologie.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Veille Technologique</a></li>
+        <li><a href="index.html#Compétences" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Compétences</a></li>
+        <li><a href="index.html#cv" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+        alt="Background"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-6">Mon Alternance chez STELOGY</h1>
+        <p class="text-xl text-blue-400 mb-4">Depuis Septembre 2024</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Présentation de l'entreprise -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-building w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Présentation de STELOGY</h2>
+      </div>
+      <div class="text-gray-300 space-y-4">
+        <p>
+          STELOGY est une entreprise spécialisée dans les services informatiques et la transformation numérique. Elle accompagne ses clients dans leur évolution technologique en proposant des solutions adaptées à leurs besoins.
+        </p>
+        <p>
+          En tant qu'alternant depuis septembre 2024, je participe activement aux missions de support et de développement des infrastructures informatiques de nos clients.
+        </p>
+      </div>
+    </section>
+
+    <!-- Missions et Réalisations -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-list-checks w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Missions et Réalisations</h2>
+      </div>
+      
+      <!-- Support et Maintenance -->
+      <div class="mb-8">
+        <h3 class="text-xl font-bold text-blue-400 mb-4">Support et Maintenance</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-900 p-6 rounded-lg">
+            <h4 class="font-bold mb-2">Dépannages Classiques</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Résolution des problèmes de connexion réseau</li>
+              <li>Dépannage des imprimantes et périphériques</li>
+              <li>Maintenance des postes de travail</li>
+              <li>Support utilisateur à distance et sur site</li>
+            </ul>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg">
+            <h4 class="font-bold mb-2">Administration Système</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Création et gestion des comptes Active Directory</li>
+              <li>Configuration des droits d'accès</li>
+              <li>Gestion des stratégies de groupe (GPO)</li>
+              <li>Administration des serveurs Windows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Microsoft Intune -->
+      <div class="mb-8">
+        <h3 class="text-xl font-bold text-blue-400 mb-4">Gestion Microsoft Intune</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-900 p-6 rounded-lg">
+            <h4 class="font-bold mb-2">Développement d'Applications MSI</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Création de packages d'applications métier</li>
+              <li>Tests et validation des déploiements</li>
+              <li>Documentation des procédures de packaging</li>
+              <li>Maintenance des applications déployées</li>
+            </ul>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg">
+            <h4 class="font-bold mb-2">Gestion de la Conformité</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Configuration des politiques de conformité</li>
+              <li>Surveillance des mises à jour Windows</li>
+              <li>Gestion des configurations de sécurité</li>
+              <li>Reporting et suivi des non-conformités</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projets Spécifiques -->
+      <div>
+        <h3 class="text-xl font-bold text-blue-400 mb-4">Projets Spécifiques</h3>
+        <div class="space-y-4">
+          <div class="bg-gray-900 p-6 rounded-lg">
+            <h4 class="font-bold mb-2">Automatisation des Déploiements</h4>
+            <p class="text-gray-300">
+              Mise en place de scripts et de procédures automatisées pour le déploiement des applications et des configurations via Intune, permettant une gestion plus efficace du parc informatique.
+            </p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-lg">
+            <h4 class="font-bold mb-2">Sécurisation des Postes de Travail</h4>
+            <p class="text-gray-300">
+              Implémentation de politiques de sécurité avancées et mise en place de solutions de protection des données sur l'ensemble du parc informatique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences Développées -->
+    <section class="bg-gray-800 rounded-lg p-8 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-award w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Compétences Développées</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Techniques</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Administration Windows Server</li>
+            <li>Gestion Microsoft 365</li>
+            <li>Déploiement d'applications</li>
+            <li>Scripting PowerShell</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Méthodologiques</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Gestion de projet</li>
+            <li>Documentation technique</li>
+            <li>Résolution de problèmes</li>
+            <li>Veille technologique</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Relationnelles</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Communication client</li>
+            <li>Travail en équipe</li>
+            <li>Formation utilisateur</li>
+            <li>Gestion des priorités</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 mt-12">
+    <div class="container mx-auto px-4 text-center text-gray-400">
+      <p>© 2024 Nicolas Martinico. Tous droits réservés.</p>
+      <p class="mt-2">
+        <a href="mailto:N.Martinico@outlook.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+          N.Martinico@outlook.com
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
