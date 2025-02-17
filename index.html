@@ -48,8 +48,27 @@
     }
   </style>
 </head>
-<body>
-<body onload="checkPassword()">
+  <script>
+    function checkPassword() {
+      const password = document.getElementById('password').value;
+      if (password === 'Aa123456789') {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        // Sauvegarder l'état de connexion
+        sessionStorage.setItem('isLoggedIn', 'true');
+      } else {
+        alert('Mot de passe incorrect');
+      }
+    }
+
+    // Vérifier si l'utilisateur est déjà connecté
+    window.onload = function() {
+      if (sessionStorage.getItem('isLoggedIn') === 'true') {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      }
+    }
+  </script>
 </body>
   <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
     <!-- Hero Section -->
