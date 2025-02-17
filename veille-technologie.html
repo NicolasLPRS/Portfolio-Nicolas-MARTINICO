@@ -24,8 +24,27 @@
       transform: scale(1.05);
     }
     
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0.5rem;
+      min-width: 12rem;
+      padding-top: 0.5rem;
+    }
+
     .dropdown:hover .dropdown-menu {
       display: block;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -0.5rem;
+      left: 0;
+      right: 0;
+      height: 0.5rem;
     }
   </style>
 </head>
