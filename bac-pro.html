@@ -50,10 +50,31 @@
 </head>
 <body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
   <!-- Navigation -->
-  <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
+ <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
     <div class="container mx-auto px-4">
       <ul class="flex justify-center space-x-8 py-4">
-        <li><a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Accueil</a></li>
+	<li class="dropdown relative">
+          <a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">
+            Accueil
+          </a>
+          <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-gray-900 rounded-lg shadow-xl">
+            <li>
+              <a href="index.html#formation" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-t-lg">
+                Formations
+              </a>
+            </li>
+            <li>
+              <a href="index.html#Compétences" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                Compétences
+              </a>
+            </li>
+	   <li>
+              <a href="index.html#Certifications" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                Certifications
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="dropdown relative">
           <a href="index.html#formation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">
             Formations
@@ -73,11 +94,12 @@
         </li>
         <li><a href="entreprise.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Entreprise</a></li>
         <li><a href="veille-technologie.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Veille Technologique</a></li>
-        <li><a href="index.html#Compétences" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Compétences/E4</a></li>
+        <li><a href="e4.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Projet E4</a></li>
         <li><a href="index.html#cv" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">CV</a></li>
       </ul>
     </div>
   </nav>
+  
   <!-- Header -->
   <header class="py-20 relative overflow-hidden">
     <div class="absolute inset-0">
