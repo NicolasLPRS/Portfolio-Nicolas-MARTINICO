@@ -56,26 +56,32 @@
     }
   </style>
    <script>
-    function checkPassword() {
-      const password = document.getElementById('password').value;
-      if (password === 'Aa123456789') {
+  async function checkPassword() {
+    const password = document.getElementById('password').value;
+
+    try {
+      const response = await fetch('users.json'); // Charger le fichier JSON
+      const data = await response.json();
+
+      if (password === data.password) { // Vérifier le mot de passe
         document.getElementById('loginForm').style.display = 'none';
         document.getElementById('content').style.display = 'block';
-        // Sauvegarder l'état de connexion
         sessionStorage.setItem('isLoggedIn', 'true');
       } else {
         alert('Mot de passe incorrect');
       }
+    } catch (error) {
+      console.error('Erreur lors de la récupération des données', error);
     }
+  }
 
-    // Vérifier si l'utilisateur est déjà connecté
-    window.onload = function() {
-      if (sessionStorage.getItem('isLoggedIn') === 'true') {
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-      }
+  window.onload = function() {
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+      document.getElementById('loginForm').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
     }
-  </script>
+  }
+</script>
 </head>
 </body>
 <body>
