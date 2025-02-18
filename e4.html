@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet E4 - Nicolas Martinico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .   .dropdown-menu {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0.5rem;
+      min-width: 12rem;
+      padding-top: 0.5rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -0.5rem;
+      left: 0;
+      right: 0;
+      height: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen">
+  <!-- Navigation -->
+  <nav class="bg-black/85 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4">
+      <ul class="flex justify-center space-x-8 py-4">
+	<li class="dropdown relative">
+          <a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">
+            Accueil
+          </a>
+          <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-gray-900 rounded-lg shadow-xl">
+            <li>
+              <a href="index.html#formation" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-t-lg">
+                Formations
+              </a>
+            </li>
+            <li>
+              <a href="index.html#Compétences" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                Compétences
+              </a>
+            </li>
+	   <li>
+              <a href="index.html#Certifications" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                Certifications
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown relative">
+          <a href="index.html#formation" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">
+            Formations
+          </a>
+          <ul class="dropdown-menu hidden absolute left-0 mt-2 w-48 bg-gray-900 rounded-lg shadow-xl">
+            <li>
+              <a href="bts-sio.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-t-lg">
+                BTS SIO SISR
+              </a>
+            </li>
+            <li>
+              <a href="bac-pro.html" class="block px-4 py-2 text-blue-400 hover:bg-gray-800 hover:text-blue-300 rounded-b-lg">
+                BAC PRO SN
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="entreprise.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Entreprise</a></li>
+        <li><a href="veille-technologie.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Veille Technologique</a></li>
+        <li><a href="e4.html" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">Projet E4</a></li>
+        <li><a href="index.html#cv" class="text-blue-400 hover:text-blue-300 transition-colors hover:scale-105 transform inline-block">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80"
+        alt="Background"
+        class="w-full h-full object-cover opacity-20"
+      />
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-6">Projet E4</h1>
+        <p class="text-xl text-blue-400 mb-4">Hôpital Sud Paris (HSP)</p>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Modernisation et sécurisation de l'infrastructure réseau
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Présentation du contexte -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-building-2 w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Contexte du projet</h2>
+      </div>
+      <div class="space-y-6 text-gray-300">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">La Générale des hôpitaux (GDH)</h3>
+          <p class="mb-4">
+            Créée en 1984, GDH est le premier groupe de cliniques et hôpitaux privés en France. Avec 40 années d'expérience, le groupe a su intégrer les dernières technologies médicales pour offrir des prestations de qualité.
+          </p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li>Siège social situé à Paris</li>
+            <li>Leader dans le secteur hospitalier privé</li>
+            <li>Expertise technologique avancée</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure réseau -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-network w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Infrastructure réseau</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">État des lieux</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Réseau de 350 postes utilisateurs</li>
+            <li>Utilisateurs variés (praticiens, administratifs, patients)</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Enjeux</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Sécurisation des données médicales</li>
+            <li>Haute disponibilité des services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions mises en place -->
+    <section class="bg-gray-800 rounded-lg p-8 mb-12 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-settings w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Solutions mises en place</h2>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Architecture réseau sécurisée</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-bold mb-2 text-blue-300">DMZ et Proxy</h4>
+              <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Mise en place d'une DMZ pour les services exposés</li>
+                <li>Proxy sécurisé pour le filtrage du trafic Web</li>
+            </div>
+            <div>
+              <h4 class="font-bold mb-2 text-blue-300">Services Web</h4>
+              <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Site web de prise de rendez-vous</li>
+                <li>Portail professionnel de santé</li>
+                <li>Système de notification automatisé</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Infrastructure Active Directory</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-bold mb-2 text-blue-300">Serveurs AD</h4>
+              <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Contrôleur de domaine principal</li>
+                <li>Contrôleur secondaire pour redondance</li>
+                <li>Réplication automatique des données</li>
+                <li>Sauvegarde renforcé</li>
+		<li>BitLocker</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold mb-2 text-blue-300">Gestion des accès</h4>
+              <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Stratégies de groupe personnalisées</li>
+                <li>Gestion centralisée des utilisateurs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Messagerie Exchange</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Serveur Exchange pour la messagerie professionnelle</li>
+          </ul>
+        </div>
+
+               <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Segmentation réseau</h3>
+          <p class="text-gray-300">
+            Mise en place de VLANs pour séparer les différents services :
+          </p>
+          <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                 <li>VLAN VISIO</li>
+                <li>VLAN LABO</li>
+            	<li>VLAN OPHTALMO</li>
+           	<li>VLAN ADMINISTRATIF </li>
+	    	<li>VLAN ANGIO</li>
+           	<li>VLAN PRATICIEN</li>
+            	<li>VLAN PATIENT </li>
+	    	<li>VLAN VISITEUR </li>
+	   	<li>VLAN SERVEURS</li>
+	    	<li>VLAN DMZ</li>
+	    	<li>VLAN WAN</li>
+          </ul>
+         </div>
+      
+
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Sécurisation des accès</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Déploiement d'un serveur RADIUS</li>
+            <li>Configuration des ACLs sur les switchs</li>
+            <li>Installation d'un pare-feu</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Haute disponibilité</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Redondance des équipements critiques</li>
+            <li>Configuration HSRP sur les routeurs</li>
+            <li>Mise en place d'une borne WIFI</li>
+	    <li>Mise en place de GLPI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences mobilisées -->
+    <section class="bg-gray-800 rounded-lg p-8 shadow-xl">
+      <div class="flex items-center mb-6">
+        <i class="lucide-check-circle w-8 h-8 text-blue-400 mr-4"></i>
+        <h2 class="text-3xl font-bold">Compétences mobilisées</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Techniques</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Configuration des switchs</li>
+            <li>Routage avancé</li>
+            <li>Sécurité réseau</li>
+            <li>Monitoring</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Organisationnelles</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Gestion de projet</li>
+            <li>Planification</li>
+            <li>Documentation</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-blue-400 mb-4">Relationnelles</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-2">
+            <li>Travail en équipe</li>
+            <li>Relation client</li>
+            <li>Formation utilisateurs</li>
+            <li>Reporting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+	<!-- Download Synthése -->
+   <br></br>
+   <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold -mr-2">Tableau de Documents</h2>
+    <br>
+    <table class="table-auto border-collapse border border-gray-400 mx-auto">
+	<thead>
+            <tr class="bg-blue-500 text-white">
+                <th class="border border-gray-400 px-4 py-2">Titre</th>
+                <th class="border border-gray-400 px-4 py-2">Téléchargement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">Tableau de Synthèse E4</td>
+                <td class="border border-gray-400 px-4 py-2">
+                    <a href="Nicolas - Tableau de synthèse - Epreuve E4 - BTS SIO 2025.xlsx" download class="text-blue-500 hover:underline">Télécharger</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">Contexte HSP</td>
+                <td class="border border-gray-400 px-4 py-2">
+                    <a href="Contexte HSP.docx" download class="text-blue-500 hover:underline">Télécharger</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">Tutoriel Installation AD</td>
+                <td class="border border-gray-400 px-4 py-2">
+                    <a href="Active Directory secondaire Windows Server 2022.docx" download class="text-blue-500 hover:underline">Télécharger</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 px-4 py-2">Gantt</td>
+                <td class="border border-gray-400 px-4 py-2">
+                    <a href="Gantt Salim Nicolas Adam Damien.pdf" download class="text-blue-500 hover:underline">Télécharger</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 mt-12">
+    <div class="container mx-auto px-4 text-center text-gray-400">
+      <p>© 2024 Nicolas Martinico. Tous droits réservés.</p>
+      <p class="mt-2">
+        <a href="mailto:N.Martinico@outlook.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+          N.Martinico@outlook.com
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
